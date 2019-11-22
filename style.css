@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  body{
+      display:flex;
+      flex-direction: row;
+      height:100vh;
+  }
+  .code-wrapper{
+      flex:1;
+      height:100vh;
+      padding:10px;
+      font-size:16px;
+  }
+  .preview-wrapper{
+      flex:1;
+      height:100vh;
+  }
+  #code{
+      overflow: hidden;
+      height:100%;
+  }
+  .actions{
+      position:absolute;
+      top:0;
+      right:60%;
+      display:flex;
+      flex-direction: column;
+  }
+  .actions button{
+      width:30px;
+      height:30px;
+      margin:10px;
+      border:none;
+      background:#ddd;
+  }
+  .actions button:focus{
+      outline:none;
+  }
+  .actions button.active{
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.95);
+  }
